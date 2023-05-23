@@ -6,9 +6,15 @@ public class Hourglass {
             for (int x = 1; x <= height; x++) {
                 if (y == 1||y==height) {
                     System.out.print("8");
-                } else if (x == y||x == height-y+1) {
+                }
+                else if (x>=y&&x<=height-y+1){
                     System.out.print("8");
-                } else
+                }
+                else if (x<=y&&x>=height-y+1) {
+                    System.out.print("8");
+                }
+
+                else
                     System.out.print(' ');
             }
             System.out.println("");

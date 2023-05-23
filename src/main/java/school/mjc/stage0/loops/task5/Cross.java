@@ -4,7 +4,7 @@ public class Cross {
     public void printCross(int sideLength) {
         for (int i = 1; i<=sideLength;i++){
             for (int a = 1; a<=sideLength;a++){
-                if (i==sideLength/2||a==sideLength/2){
+                if (i==Math.ceil(sideLength/ 2.0)||a==Math.ceil(sideLength / 2.0)){
                     System.out.print("8");
                 }
                 else
